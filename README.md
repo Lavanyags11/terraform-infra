@@ -1,4 +1,4 @@
-# Terraform AWS Infrastructure for Octa Byte AI Project
+# Terraform AWS Infrastructure Project
 
 ## Overview
 This project provisions AWS infrastructure using Terraform for the Octa Byte AI application.
