@@ -10,12 +10,7 @@ It creates a secure, scalable environment with networking, compute, storage, and
 - AWS credentials configured (aws configure)
 
 ### Folder Structure
-terraform/
-├── backend.tf           # Terraform backend configuration for S3 and DynamoDB
-├── main.tf              # Main infrastructure resources
-├── output.tf            # Output variables
-├── provider.tf          # AWS provider configuration
-└── variable.tf          # Configurable variables
+<img width="396" height="182" alt="image" src="https://github.com/user-attachments/assets/f844e4ea-0df3-4dd5-96c3-e4b40ccf3e53" />
 
 ### Infrastructure Components
 - **VPC** - custom VPC with CIDR 10.0.0.0/16
@@ -71,10 +66,7 @@ terraform/
 
 ### Outputs
 After running terraform apply, Terraform prints the following:
-- VPC ID
-- EC2 Public IP
-- RDS Endpoint
-- ALB DNS Name
+<img width="806" height="97" alt="image" src="https://github.com/user-attachments/assets/ed29242e-74f9-472d-b72e-761890788fa8" />
 
 ### References
 The following official Terraform and AWS documentation resources were referred to while building this infrastructure:
