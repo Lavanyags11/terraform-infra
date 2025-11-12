@@ -1,7 +1,7 @@
 # Terraform AWS Infrastructure Project
 
 ## Overview
-This project provisions AWS infrastructure using Terraform for the Octa Byte AI application.
+This project provisions AWS infrastructure using Terraform.
 It creates a secure, scalable environment with networking, compute, storage, and database layers.
 
 ### Infrastructure Components
