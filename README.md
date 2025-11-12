@@ -4,6 +4,19 @@
 This project provisions AWS infrastructure using Terraform.
 It creates a secure, scalable environment with networking, compute, storage, and database layers.
 
+### Prerequisites
+- AWS CLI to be installed: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+- Terraform to be installed: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+- AWS credentials configured (aws configure)
+
+### Folder Structure
+terraform/
+├── backend.tf           # Terraform backend configuration for S3 and DynamoDB
+├── main.tf              # Main infrastructure resources
+├── output.tf            # Output variables
+├── provider.tf          # AWS provider configuration
+└── variable.tf          # Configurable variables
+
 ### Infrastructure Components
 - **VPC** - custom VPC with CIDR 10.0.0.0/16
 - **Subnets** - two public and two private subnets across us-east-1a and us-east-1b
@@ -63,27 +76,27 @@ After running terraform apply, Terraform prints the following:
 - RDS Endpoint
 - ALB DNS Name
 
-  ### References
-  The following official Terraform and AWS documentation resources were referred to while building this infrastructure:
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs
-  - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint_route_table_association
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_subnet_group
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
-  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table
-  - https://developer.hashicorp.com/terraform/language/backend/s3
-  - https://developer.hashicorp.com/terraform/language/block/variable
-  - https://developer.hashicorp.com/terraform/language/block/output
+### References
+The following official Terraform and AWS documentation resources were referred to while building this infrastructure:
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+- https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint_route_table_association
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_subnet_group
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table
+- https://developer.hashicorp.com/terraform/language/backend/s3
+- https://developer.hashicorp.com/terraform/language/block/variable
+- https://developer.hashicorp.com/terraform/language/block/output
   
 
 
