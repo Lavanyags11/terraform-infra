@@ -27,12 +27,12 @@ variable "public2_subnet_cidr" {
 
 # EC2 Configuration
 variable "instance_type" {
-  description = "Type of EC2 instance to launch"
+  description = "Instance type"
   default     = "t2.micro"
 }
 
 variable "key_pair" {
-  description = "Name of existing AWS key pair to SSH into the instance"
+  description = "pem key name to be entered"
   default     = "lavanya_gowda" 
 }
 
